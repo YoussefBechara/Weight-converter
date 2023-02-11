@@ -1,0 +1,15 @@
+def converter():
+    metric = input("'kg' for kilos and 'lbs' for pounds: ")
+    weight = int(input("How much do you weigh: "))
+    converted_weight = ''
+    if metric.lower() == 'kg':
+        converted_weight = weight * 2.2
+        print(f'You weigh {converted_weight} pounds!')
+    elif metric.lower() == 'lbs':
+        converted_weight = weight * 0.45
+        print(f'You weight {converted_weight} kilos!')
+    elif metric != 'lbs' and metric != 'kg':
+        print(f'Sorry! {metric} is not a valid weight metric, try again')
+
+
+converter()
